@@ -8,30 +8,30 @@ Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm iphoneos-arm64
 Components: main
-Date: Wed, 01 Apr 2026 19:31:54 UTC
+Date: Wed, 01 Apr 2026 19:41:28 UTC
 Description: A personal Cydia/Sileo repository.
 MD5Sum:
  c5db3489d16ab45ec879a185465c9a74 2070 ./Packages
- 8b3d54c70ba5ff8189cbf39a77de516d 999 ./Packages.gz
+ 77cbbb5681bef9f792d168f0296f9740 999 ./Packages.gz
 SHA1:
  80ec6f86fa891ac280330246fdd251091e8fce65 2070 ./Packages
- 0994aacc816119f726b4ef51ba105d0f8bc7c7cc 999 ./Packages.gz
+ 6fb77b5c4255103fd09ae2e8adc13eff0b68ae8e 999 ./Packages.gz
 SHA256:
  b02c112ec172b67c70e2535df6e30f06fc08d106d397c038ad5110fc5411d4f3 2070 ./Packages
- 3d9851712ba3e37771a1e4adc2a8018b61b1f5621fc6dc495f5983b4f610281f 999 ./Packages.gz
+ a8b08532ccb1ca5c2a8e6bbe8a9b6331770ace4e58767361db03bdd52da2d054 999 ./Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEECQK+wNkZAnKmAgjC5bJ5+Ab7s2kFAmnNcqsACgkQ5bJ5+Ab7
-s2k/PxAAmjSOCPUd4/oC/6nEzDY0jZDNcII3C60S5BVtfFvd8vr+dqzv/me8gsBk
-TjFpgxtqdKzcW0ptNTaQ8qPrXMcQY7lnHffC1IwDS6jn4RlS34ttycDQiiQZuZOa
-Kez7HXTLVdOAQfvWSrpavu0acCj3DcZwOlAN5w8T8U4CL9dzZol2JheSMrmyDP/t
-rCEmTVaTQsM/4MI30YlYzqIHWtgF1nr1zlXFMiEOn1PRXaXNDr7QDbn801MMA8uC
-fy8Wcwx2xNFUxkJp4I0Qa/U4kBOQgwWoJfOZyQlbJNeVyuqPF3MmrZwETYGNOMHr
-gUpqGsvDmWvloCMoEG73qZozNxTH87wZXhpFqSrOdk5H6eoQXR7WxlEhbziial2w
-PsNqkOJAHvdqWyTin1Ggft3VOLcbDjoE9JjX1R9d+jd88INirFrMxjOfHbw8TqO3
-kRftiSUWDuVp4IYM/NqaqUiNgGSsItZaDaJkHo+FY8akeS37Z/Et1X4dbJH+nTTb
-FSomJ63ptgSq9w/sSmuz1vUZ91WHyryRKLQn6QWJSn+WgCjCD8419wv3mLLnnMMH
-TnlKZy3Xax61O6u5Qm0R+ssfK3bai7NSKGaw3RuWxpRiBclhb5g1aWov93BSLpRf
-qNsXJMLg6enffKvavcIvkrbGcY3G2StN6JlSNqMVQSwc26tLowo=
-=HjZh
+iQIzBAEBCAAdFiEECQK+wNkZAnKmAgjC5bJ5+Ab7s2kFAmnNdOkACgkQ5bJ5+Ab7
+s2mGLhAAq9wQJ+jg2vp6fB2nAP1ZYtAwdL37ih7J+0KtmH3O7Npd+RJayz1fv1l/
+J8gjyjZdCLhM8qXigOaSRyfCTXxH+atRt5XVLbii0+1nYmLJNHwfbD9dfY3GTl/P
+auKYE05A8GMirEUUuJsqr3oZQIwpZDh9ukdu6X8AE0ex+srifHwJfJBGT0MQEBtW
+GQvUNLAe4CGLhqvvdSt+bSfD4NipT1KlDFOv3Xs+q3lNlEDqauW85C924Jz0lQf+
+xras5ON0Y3F6DTvjXCbhA5CKjQuMp+wnGETbw/8OqCiI4N5d5eMzqyriErKIt49v
+OdVaHnRbmWcAc8PvZH28nadzustDCp0NJr25yVWo/NgNIJJRiq1zGEelrPmKl6Vt
+uYGHV8ZBpZutXToF26EWTPzZxp0fWlaMC4yJ9M5h30IRSZrfeFVgBAGtIoMvalEq
++XW6Yz15UMYLMLcRzTYBJqQKDWNIcA+9011EzSez1e4vvi78p9aTypl1aeaDedck
+1UZXpEosXfXeBm65yD2oeiNec9FiZdIPQR7GtW8MgAt6GRI55QuzYsLsNuTXeDEg
+BgEm1eHLxy3SKWjxO9xGPrV4TY8pXy0zhEFnkbAevYFW+aJCYvSGOrwi5aRAU4I6
+v+6/nmSV1UfGUo72hwcvVt7qdkdtagi62VXHizImjgbs7a9+xlg=
+=QovD
 -----END PGP SIGNATURE-----

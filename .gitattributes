@@ -1,7 +1,1 @@
-Packages binary
-Packages.gz binary
-Release binary
-Release.gpg binary
-InRelease binary
-repo.gpg binary
-*.deb binary
+* -text
