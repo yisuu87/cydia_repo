@@ -12,8 +12,7 @@ Replaces: us.hackulo.appsync50, net.angelxwind.appsyncunified
 Provides: appsync, net.angelxwind.appsyncunified
 Homepage: https://cydia.akemi.ai/
 Depiction: https://cydia.akemi.ai/?page/ai.akemi.appsyncunified
-SileoDepiction: depictions/ai.akemi.appsyncunified.json
-Filename: debs/ai.akemi.appsyncunified_116.0_iphoneos-arm64.akemi-git-235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a.deb
+Filename: debians/ai.akemi.appsyncunified_116.0_iphoneos-arm64.akemi-git-235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a.deb
 Size: 49472
 MD5sum: d6a31911e878b83e47c6525fa29ecef1
 SHA1: d00d2667c0d5421dddfc70a2734f1d63b972a535
@@ -28,8 +27,7 @@ Description: Test package to verify repo works.
 Maintainer: Yisuu
 Author: Yisuu
 Section: System
-SileoDepiction: depictions/com.yisuu.test.json
-Filename: debs/com.yisuu.test_1.0_iphoneos-arm64.deb
+Filename: debians/com.yisuu.test_1.0_iphoneos-arm64.deb
 Size: 470
 MD5sum: f7d5d17d273eb00e7c61795a1cbd423d
 SHA1: 8d84d51d57f615f937b35168d3025b387c59c02f

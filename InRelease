@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: Yisuu's Repo
+Label: Yisuu's Repo
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm iphoneos-arm64
+Components: main
+Date: Wed, 01 Apr 2026 19:31:54 UTC
+Description: A personal Cydia/Sileo repository.
+MD5Sum:
+ c5db3489d16ab45ec879a185465c9a74 2070 ./Packages
+ 8b3d54c70ba5ff8189cbf39a77de516d 999 ./Packages.gz
+SHA1:
+ 80ec6f86fa891ac280330246fdd251091e8fce65 2070 ./Packages
+ 0994aacc816119f726b4ef51ba105d0f8bc7c7cc 999 ./Packages.gz
+SHA256:
+ b02c112ec172b67c70e2535df6e30f06fc08d106d397c038ad5110fc5411d4f3 2070 ./Packages
+ 3d9851712ba3e37771a1e4adc2a8018b61b1f5621fc6dc495f5983b4f610281f 999 ./Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEECQK+wNkZAnKmAgjC5bJ5+Ab7s2kFAmnNcqsACgkQ5bJ5+Ab7
+s2k/PxAAmjSOCPUd4/oC/6nEzDY0jZDNcII3C60S5BVtfFvd8vr+dqzv/me8gsBk
+TjFpgxtqdKzcW0ptNTaQ8qPrXMcQY7lnHffC1IwDS6jn4RlS34ttycDQiiQZuZOa
+Kez7HXTLVdOAQfvWSrpavu0acCj3DcZwOlAN5w8T8U4CL9dzZol2JheSMrmyDP/t
+rCEmTVaTQsM/4MI30YlYzqIHWtgF1nr1zlXFMiEOn1PRXaXNDr7QDbn801MMA8uC
+fy8Wcwx2xNFUxkJp4I0Qa/U4kBOQgwWoJfOZyQlbJNeVyuqPF3MmrZwETYGNOMHr
+gUpqGsvDmWvloCMoEG73qZozNxTH87wZXhpFqSrOdk5H6eoQXR7WxlEhbziial2w
+PsNqkOJAHvdqWyTin1Ggft3VOLcbDjoE9JjX1R9d+jd88INirFrMxjOfHbw8TqO3
+kRftiSUWDuVp4IYM/NqaqUiNgGSsItZaDaJkHo+FY8akeS37Z/Et1X4dbJH+nTTb
+FSomJ63ptgSq9w/sSmuz1vUZ91WHyryRKLQn6QWJSn+WgCjCD8419wv3mLLnnMMH
+TnlKZy3Xax61O6u5Qm0R+ssfK3bai7NSKGaw3RuWxpRiBclhb5g1aWov93BSLpRf
+qNsXJMLg6enffKvavcIvkrbGcY3G2StN6JlSNqMVQSwc26tLowo=
+=HjZh
+-----END PGP SIGNATURE-----

@@ -5,4 +5,14 @@ Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm iphoneos-arm64
 Components: main
-Description: A Cydia/Sileo repository hosted on GitHub Pages.
+Date: Wed, 01 Apr 2026 19:31:54 UTC
+Description: A personal Cydia/Sileo repository.
+MD5Sum:
+ c5db3489d16ab45ec879a185465c9a74 2070 ./Packages
+ 8b3d54c70ba5ff8189cbf39a77de516d 999 ./Packages.gz
+SHA1:
+ 80ec6f86fa891ac280330246fdd251091e8fce65 2070 ./Packages
+ 0994aacc816119f726b4ef51ba105d0f8bc7c7cc 999 ./Packages.gz
+SHA256:
+ b02c112ec172b67c70e2535df6e30f06fc08d106d397c038ad5110fc5411d4f3 2070 ./Packages
+ 3d9851712ba3e37771a1e4adc2a8018b61b1f5621fc6dc495f5983b4f610281f 999 ./Packages.gz

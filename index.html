@@ -1,156 +1,78 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YxLiang's Cydia/Sileo Repo</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            color: #e0e0e0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
-        }
-        .container { max-width: 640px; width: 100%; }
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .header h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            background: linear-gradient(90deg, #2CB1BE, #a855f7);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 8px;
-        }
-        .header p { color: #9ca3af; font-size: 0.95rem; }
-        .card {
-            background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 20px;
-            backdrop-filter: blur(12px);
-        }
-        .card h2 {
-            font-size: 1.1rem;
-            margin-bottom: 12px;
-            color: #2CB1BE;
-        }
-        .add-btn {
-            display: inline-block;
-            background: linear-gradient(135deg, #2CB1BE, #a855f7);
-            color: #fff;
-            text-decoration: none;
-            padding: 12px 28px;
-            border-radius: 12px;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .add-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(44,177,190,0.3);
-        }
-        .repo-url {
-            background: rgba(0,0,0,0.3);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 8px;
-            padding: 12px 16px;
-            font-family: "SF Mono", "Fira Code", monospace;
-            font-size: 0.9rem;
-            color: #2CB1BE;
-            word-break: break-all;
-            margin: 12px 0;
-            user-select: all;
-        }
-        .steps { list-style: none; counter-reset: step; }
-        .steps li {
-            counter-increment: step;
-            padding: 8px 0 8px 36px;
-            position: relative;
-            color: #d1d5db;
-            font-size: 0.9rem;
-        }
-        .steps li::before {
-            content: counter(step);
-            position: absolute;
-            left: 0;
-            width: 24px;
-            height: 24px;
-            background: rgba(44,177,190,0.2);
-            border: 1px solid #2CB1BE;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: #2CB1BE;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #6b7280;
-            font-size: 0.8rem;
-        }
-        @media (max-width: 480px) {
-            .header h1 { font-size: 1.5rem; }
-            .card { padding: 16px; }
-        }
-    </style>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <title>Yisuu's Repo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="repo-header">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <img src="CydiaIcon.png" alt="Repository Icon" />
+          <h1>Yisuu's Repo</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title mb-3">Yisuu's Repo</h5>
+          <p class="card-text mb-4">
+            A personal Cydia/Sileo repository.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary" href="sileo://source/https://yisuu87.github.io/cydia_repo/"
+              >Add to Sileo</a
+            >
+            <a
+              class="btn btn-primary"
+              href="zbra://sources/add/https://yisuu87.github.io/cydia_repo/"
+              >Add to Zebra</a
+            >
+            <a class="btn btn-primary" href="apt-repo://https://yisuu87.github.io/cydia_repo/"
+              >Add to Saily</a
+            >
+            <a
+              class="btn btn-primary"
+              href="cydia://url/https://cydia.saurik.com/api/share#?source=https://yisuu87.github.io/cydia_repo/"
+              >Add to Cydia</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
-        <div class="header">
-            <h1>YxLiang's Repo</h1>
-            <p>Cydia / Sileo Repository</p>
-        </div>
-
-        <div class="card" style="text-align: center;">
-            <h2>Add to Cydia / Sileo</h2>
-            <a class="add-btn" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://YOURUSERNAME.github.io/cydia_repo/">
-                Add to Cydia
-            </a>
-            <div style="margin-top: 16px;">
-                <a class="add-btn" style="background: linear-gradient(135deg, #a855f7, #ec4899);"
-                   href="sileo://source/https://YOURUSERNAME.github.io/cydia_repo/">
-                    Add to Sileo
-                </a>
+      <h2 class="section-title">Packages</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">AppSync Unified</div>
+            <div class="card-body">
+              <p class="card-text">
+                Enables the ability to install unsigned/fakesigned iOS applications.
+              </p>
             </div>
-            <div class="repo-url" id="repoUrl">https://YOURUSERNAME.github.io/cydia_repo/</div>
-            <p style="font-size: 0.8rem; color: #9ca3af; margin-top: 4px;">
-                Click the URL above to select and copy
-            </p>
+          </div>
         </div>
-
-        <div class="card">
-            <h2>How to Add</h2>
-            <ol class="steps">
-                <li>Open Cydia or Sileo on your device</li>
-                <li>Go to Sources tab</li>
-                <li>Tap "Edit" then "Add"</li>
-                <li>Paste the repo URL above</li>
-                <li>Tap "Add Source" and enjoy!</li>
-            </ol>
-        </div>
-
-        <div class="card">
-            <h2>About</h2>
-            <p style="font-size: 0.9rem; line-height: 1.6;">
-                This repository hosts jailbreak tweaks and packages for iOS devices.
-                Compatible with Cydia, Sileo, Zebra, and Installer 5.
-            </p>
-        </div>
+      </div>
     </div>
-    <div class="footer">
-        <p>&copy; 2026 YxLiang's Repo. Hosted on GitHub Pages.</p>
-    </div>
-</body>
+  </body>
 </html>
