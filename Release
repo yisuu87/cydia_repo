@@ -6,12 +6,3 @@ Codename: ios
 Architectures: iphoneos-arm iphoneos-arm64
 Components: main
 Description: A Cydia/Sileo repository hosted on GitHub Pages.
-MD5Sum:
- 81fb2691f6f2d04625a943d18f54d66f 1730 ./Packages
- 19d7a531d3a3c2515f1fce600125bba9 831 ./Packages.gz
-SHA1:
- e290d10ca1b1b1e133ab6759fc276dedfca7d4ba 1730 ./Packages
- 2eb861a04311f8bb788c0f9931e02805fd2d0503 831 ./Packages.gz
-SHA256:
- c47033b9474dc7ae28344c779d24a0192ed69dd5cbff1a41f603138867aaabdc 1730 ./Packages
- 5e3fc1a19159b68b3469e7a93562d4259fbb2ff9eca893dcb1311f6169d13440 831 ./Packages.gz

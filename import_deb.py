@@ -327,48 +327,8 @@ def generate_depiction(fields: dict):
 # ---------------------------------------------------------------------------
 
 def update_release():
-    """Update Release file with checksums of Packages files."""
-    release_path = REPO_ROOT / "Release"
-    release_text = release_path.read_text(encoding="utf-8")
-
-    # Remove old checksum sections
-    lines = []
-    skip = False
-    for line in release_text.splitlines():
-        if line.startswith("MD5Sum:") or line.startswith("SHA1:") or line.startswith("SHA256:"):
-            skip = True
-            continue
-        if skip and line.startswith(" "):
-            continue
-        skip = False
-        lines.append(line)
-
-    # Compute checksums for Packages files
-    packages_files = ["Packages", "Packages.gz"]
-    md5_lines = []
-    sha1_lines = []
-    sha256_lines = []
-
-    for fname in packages_files:
-        fpath = REPO_ROOT / fname
-        if not fpath.exists():
-            continue
-        hashes = compute_hashes(fpath)
-        md5_lines.append(f" {hashes['md5']} {hashes['size']} ./{fname}")
-        sha1_lines.append(f" {hashes['sha1']} {hashes['size']} ./{fname}")
-        sha256_lines.append(f" {hashes['sha256']} {hashes['size']} ./{fname}")
-
-    # Append checksum sections
-    if md5_lines:
-        lines.append("MD5Sum:")
-        lines.extend(md5_lines)
-        lines.append("SHA1:")
-        lines.extend(sha1_lines)
-        lines.append("SHA256:")
-        lines.extend(sha256_lines)
-
-    release_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print("  [+] Updated Release with checksums")
+    """Update Release file — no checksums (GitHub Pages may alter file content)."""
+    print("  [+] Release unchanged (no checksums for GitHub Pages compatibility)")
 
 
 # ---------------------------------------------------------------------------
