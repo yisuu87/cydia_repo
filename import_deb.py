@@ -327,8 +327,85 @@ def generate_depiction(fields: dict):
 # ---------------------------------------------------------------------------
 
 def update_release():
-    """Update Release file — no checksums (GitHub Pages may alter file content)."""
-    print("  [+] Release unchanged (no checksums for GitHub Pages compatibility)")
+    """Update Release with checksums and GPG sign."""
+    release_path = REPO_ROOT / "Release"
+    release_text = release_path.read_bytes().decode("utf-8")
+
+    # Remove old checksum sections
+    lines = []
+    skip = False
+    for line in release_text.splitlines():
+        if line.startswith("MD5Sum:") or line.startswith("SHA1:") or line.startswith("SHA256:"):
+            skip = True
+            continue
+        if skip and line.startswith(" "):
+            continue
+        skip = False
+        lines.append(line)
+
+    # Update Date
+    from datetime import datetime, timezone
+    date_str = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S UTC")
+    new_lines = []
+    date_found = False
+    for line in lines:
+        if line.startswith("Date:"):
+            new_lines.append(f"Date: {date_str}")
+            date_found = True
+        else:
+            new_lines.append(line)
+    if not date_found:
+        # Insert before Description
+        idx = next((i for i, l in enumerate(new_lines) if l.startswith("Description:")), len(new_lines))
+        new_lines.insert(idx, f"Date: {date_str}")
+    lines = new_lines
+
+    # Compute checksums
+    packages_files = ["Packages", "Packages.gz"]
+    md5_lines, sha1_lines, sha256_lines = [], [], []
+    for fname in packages_files:
+        fpath = REPO_ROOT / fname
+        if not fpath.exists():
+            continue
+        hashes = compute_hashes(fpath)
+        md5_lines.append(f" {hashes['md5']} {hashes['size']} ./{fname}")
+        sha1_lines.append(f" {hashes['sha1']} {hashes['size']} ./{fname}")
+        sha256_lines.append(f" {hashes['sha256']} {hashes['size']} ./{fname}")
+
+    if md5_lines:
+        lines.append("MD5Sum:")
+        lines.extend(md5_lines)
+        lines.append("SHA1:")
+        lines.extend(sha1_lines)
+        lines.append("SHA256:")
+        lines.extend(sha256_lines)
+
+    release_path.write_bytes("\n".join(lines).encode("utf-8"))
+    print("  [+] Updated Release with checksums")
+
+    # GPG sign
+    gpg_key = "Yisuu Repo"
+    release_gpg = REPO_ROOT / "Release.gpg"
+    in_release = REPO_ROOT / "InRelease"
+    release_gpg.unlink(missing_ok=True)
+    in_release.unlink(missing_ok=True)
+
+    ret1 = subprocess.run(
+        ["gpg", "--default-key", gpg_key, "-abs", "-o", str(release_gpg), str(release_path)],
+        capture_output=True, text=True,
+    )
+    ret2 = subprocess.run(
+        ["gpg", "--default-key", gpg_key, "--clearsign", "-o", str(in_release), str(release_path)],
+        capture_output=True, text=True,
+    )
+    if ret1.returncode == 0 and ret2.returncode == 0:
+        print("  [+] GPG signed: Release.gpg + InRelease")
+    else:
+        print("  [!] GPG signing failed (install gpg and generate key)")
+        if ret1.stderr:
+            print(f"      {ret1.stderr.strip()}")
+        if ret2.stderr:
+            print(f"      {ret2.stderr.strip()}")
 
 
 # ---------------------------------------------------------------------------
