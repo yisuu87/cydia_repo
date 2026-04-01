@@ -20,3 +20,18 @@ SHA1: d00d2667c0d5421dddfc70a2734f1d63b972a535
 SHA256: 2bdaac72a6d1b006309b7dd28f51b1e3d351d3d8758fc9f08ca670f1d71eb382
 Installed-Size: 668
 
+Package: com.yisuu.test
+Name: Yisuu Test Package
+Version: 1.0
+Architecture: iphoneos-arm64
+Description: Test package to verify repo works.
+Maintainer: Yisuu
+Author: Yisuu
+Section: System
+SileoDepiction: depictions/com.yisuu.test.json
+Filename: debs/com.yisuu.test_1.0_iphoneos-arm64.deb
+Size: 470
+MD5sum: f7d5d17d273eb00e7c61795a1cbd423d
+SHA1: 8d84d51d57f615f937b35168d3025b387c59c02f
+SHA256: 724aa69ccac3cd9249cdb2831fb60aa8c0c79e560e2bd021d8a920ae66468c9b
+
