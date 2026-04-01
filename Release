@@ -1,0 +1,23 @@
+Origin: Yisuu's Repo
+Label: Yisuu's Repo
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm iphoneos-arm64
+Components: main
+Description: A Cydia/Sileo repository hosted on GitHub Pages.
+MD5Sum:
+ 81fb2691f6f2d04625a943d18f54d66f 1730 ./Packages
+ fdb055997253b79a4f285c1d151b81df 942 ./Packages.bz2
+ 64193b2254e9a6b06e34c412416b33b6 831 ./Packages.gz
+ afa5c0f736a27bb0d9606a737a5d92ea 892 ./Packages.xz
+SHA1:
+ e290d10ca1b1b1e133ab6759fc276dedfca7d4ba 1730 ./Packages
+ 74b6022bc07b9dc31eb1c971b8ef58216602dc79 942 ./Packages.bz2
+ 02da556b8406a041e8eb953a8d595446f56ae684 831 ./Packages.gz
+ cc530500cd49e78a6e3acee6f075d48f79ccabd8 892 ./Packages.xz
+SHA256:
+ c47033b9474dc7ae28344c779d24a0192ed69dd5cbff1a41f603138867aaabdc 1730 ./Packages
+ 652bddbde86663e6a7d43563283b9c25d645c6a50eb3ac5073d55d925662738f 942 ./Packages.bz2
+ 5483a7e5d5a9012827f8c9022a90404ab30bfee4acffa0b8cd3b8ceac3df54e2 831 ./Packages.gz
+ 9ad3227bed65eb8638dd683ae59800ebe94f0cbfd4325967ae247e9303b64b00 892 ./Packages.xz
