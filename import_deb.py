@@ -260,14 +260,6 @@ def generate_packages():
     except Exception as e:
         print(f"  [!] gzip compression failed: {e}")
 
-    try:
-        import lzma
-        xz_path = REPO_ROOT / "Packages.xz"
-        xz_path.write_bytes(lzma.compress(packages_text.encode("utf-8")))
-        print("  [+] Generated Packages.xz")
-    except Exception as e:
-        print(f"  [!] xz compression failed: {e}")
-
     return all_entries
 
 
@@ -360,7 +352,7 @@ def update_release():
         lines.append(line)
 
     # Compute checksums for Packages files
-    packages_files = ["Packages", "Packages.bz2", "Packages.gz", "Packages.xz"]
+    packages_files = ["Packages", "Packages.bz2", "Packages.gz"]
     md5_lines = []
     sha1_lines = []
     sha256_lines = []
