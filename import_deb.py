@@ -240,7 +240,7 @@ def generate_packages():
         packages_text += "\n".join(lines) + "\n\n"
 
     packages_path = REPO_ROOT / "Packages"
-    packages_path.write_text(packages_text, encoding="utf-8")
+    packages_path.write_bytes(packages_text.encode("utf-8"))
     print(f"  [+] Generated Packages ({len(all_entries)} package(s))")
 
     # Compress
@@ -316,8 +316,8 @@ def generate_depiction(fields: dict):
     }
 
     depiction_path = DEPICTIONS_DIR / f"{pkg_id}.json"
-    depiction_path.write_text(
-        json.dumps(depiction, indent=2, ensure_ascii=False), encoding="utf-8"
+    depiction_path.write_bytes(
+        json.dumps(depiction, indent=2, ensure_ascii=False).encode("utf-8")
     )
     print(f"  [+] Depiction: depictions/{pkg_id}.json")
 
