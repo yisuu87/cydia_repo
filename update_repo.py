@@ -185,23 +185,6 @@ def generate_release():
         f"Description: {REPO_DESCRIPTION}\n"
     )
 
-    # Add checksums
-    pkg_files = ["Packages", "Packages.gz"]
-    md5_lines, sha1_lines, sha256_lines = [], [], []
-    for fname in pkg_files:
-        fpath = REPO_ROOT / fname
-        if not fpath.exists():
-            continue
-        h = compute_hashes(fpath)
-        md5_lines.append(f" {h['md5']} {h['size']} ./{fname}")
-        sha1_lines.append(f" {h['sha1']} {h['size']} ./{fname}")
-        sha256_lines.append(f" {h['sha256']} {h['size']} ./{fname}")
-
-    if md5_lines:
-        release += "MD5Sum:\n" + "\n".join(md5_lines) + "\n"
-        release += "SHA1:\n" + "\n".join(sha1_lines) + "\n"
-        release += "SHA256:\n" + "\n".join(sha256_lines) + "\n"
-
     (REPO_ROOT / "Release").write_bytes(release.encode("utf-8"))
     print("  [+] Release")
 
@@ -258,8 +241,9 @@ def main():
     print("\n=== Generating Release ===\n")
     generate_release()
 
-    print("\n=== Signing ===\n")
-    sign_release()
+    # GPG signing disabled — GitHub Pages corrupts signature files
+    # print("\n=== Signing ===\n")
+    # sign_release()
 
     print("\n=== Done! ===")
     print("  git add -A && git commit -m 'Update repo' && git push\n")
