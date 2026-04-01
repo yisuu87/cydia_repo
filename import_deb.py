@@ -360,28 +360,8 @@ def update_release():
         new_lines.insert(idx, f"Date: {date_str}")
     lines = new_lines
 
-    # Compute checksums
-    packages_files = ["Packages", "Packages.gz"]
-    md5_lines, sha1_lines, sha256_lines = [], [], []
-    for fname in packages_files:
-        fpath = REPO_ROOT / fname
-        if not fpath.exists():
-            continue
-        hashes = compute_hashes(fpath)
-        md5_lines.append(f" {hashes['md5']} {hashes['size']} ./{fname}")
-        sha1_lines.append(f" {hashes['sha1']} {hashes['size']} ./{fname}")
-        sha256_lines.append(f" {hashes['sha256']} {hashes['size']} ./{fname}")
-
-    if md5_lines:
-        lines.append("MD5Sum:")
-        lines.extend(md5_lines)
-        lines.append("SHA1:")
-        lines.extend(sha1_lines)
-        lines.append("SHA256:")
-        lines.extend(sha256_lines)
-
     release_path.write_bytes("\n".join(lines).encode("utf-8"))
-    print("  [+] Updated Release with checksums")
+    print("  [+] Updated Release (no checksums — GitHub Pages alters files)")
 
     # GPG sign
     gpg_key = "Yisuu Repo"

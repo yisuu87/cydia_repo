@@ -8,30 +8,20 @@ Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm iphoneos-arm64
 Components: main
-Date: Wed, 01 Apr 2026 18:01:29 UTC
 Description: A Cydia/Sileo repository hosted on GitHub Pages.
-MD5Sum:
- 1e5746ca3491a40cdd5ba7838e38dd11 2167 ./Packages
- 935f2c81e9e683c7ac42aee88b2d6228 1017 ./Packages.gz
-SHA1:
- 9fb2bc0b4b4b84d0d5ec17d898a5f5e9db66d3e3 2167 ./Packages
- 3aef8f338eab307bc63e6fe629385c8b037cf065 1017 ./Packages.gz
-SHA256:
- 9cdf4fef1c6a9073decd37dbbfb1b6bf1859f97cd68ace0f9d1af98fd030db8d 2167 ./Packages
- 900c23a4bde09491e77c11d9584140ed71ffe82af0a850a75de22a7e038fb34c 1017 ./Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEECQK+wNkZAnKmAgjC5bJ5+Ab7s2kFAmnNXdYACgkQ5bJ5+Ab7
-s2mphRAAqaafueGxjohdoxcGwQ1zd8EwxVBR9BMDbD1usmCekGvjVcoJLy9uaLCw
-X3KwXUa9wYmM+7K8MvTDf5pStaGLhmqYPThcnf0BV0hwgbc/BO/1nr3CY/1aLcND
-TLTfGb/EIn8dkUaI/vsyY/JTXZ4zoBIpef5uI6PYvpjVpJcBFMq0ZwLRyrHgyQzg
-MTdKtd9hI0aPKx/QqHoCnvSkQRvdp200st6upTCmWkQaAsWZMwmlNgz+wn7/VyDF
-rMXgxtSwueqo4C7W5w4/MUhcfU5A/T15ERLD3Wn1JXrerlL8s5+1VW2zv6EBKrZ4
-STb4sywDDmeO/ki3j76goimuyJE9JiQlVIqrADTQoandig87Eaq20Q9AF8+6C6f/
-HPI41yckX6ilxNRa0WVglKS9UQU1Ndey/Jaw5Yvwtim9DoEn2rRVouSHeLdTDL81
-smFtAsGxSHmZgcbRut0xR/+qiO05FaAeCwEei9YmK3PYuC1wngWrDDA4psvRhl4I
-sVQsd+FyZxwqpy8IId8vHQXwq2q5/wOO6xzxq290JAh12W50j0+t8XkE5sNAHsgU
-V1uPOIgc1SCtzwl7nIdg/duCovMCYAgWfvdoXJVjmpUO9KX65pfWYKsXMYtu0qeb
-0AgPU+E6iqWIpTVs+LkK4ISXOXAheQaFFyKG8rkniHha1p6tvoU=
-=T8iC
+iQIzBAEBCAAdFiEECQK+wNkZAnKmAgjC5bJ5+Ab7s2kFAmnNZywACgkQ5bJ5+Ab7
+s2lQTQ/8DF0cXCM9QYDEw5K1aVl/oxtuOl+dKMW7tG4v17FLRIfQKMoMbe9xrRX+
+lPCZFDF1w9wWfxa9u7j4SHSLfARjqpeXC2+smc8IimX1+JalDrnEDPiQjYKh835d
+/RB/mrgpRISziCY1/U6NGrdDD8dn5GIOX+iDE3+pa8Y05SXs7WQNzFXaGlzsShKt
+LpgkJNUPaX77zHrpiMq6a0tLbpVdquEVZuKUwicGSUCnf8d66nUYfLXxnBkMtckH
+HC7MQjISl6iKW8HYIcjeGoWXsyB30RbWVY4DytcdsGHsqd5K+86tkjSW1UoUZPCE
+GNnGAttCc6GNfXSfO9EQ+jIsICv3wvcM95AOKhQDURtb0BPmpq1TqgVAgBI95lKI
+8wWdS+wS8t0lXdxxmJXO5H7yyjMS96LRZDB1Oq5jcwWJWSN39M/0raTuRXAtVk6b
+2ZZI6w6+1toibdOSp8ZNZ2xQS2gmXA1CqNI4vp8U2GUq/7tk0gBReqdYIgkQCeie
+1gjhnJ0JEAr2hwxzUen2W9I/8FeA3OXiFdsK2SXBGFsbyQJtHxiH94ueFhCjbkff
+JTSysK7n0qKG5Fgu+Dc37KA8EXmqM8gqnf49Rdh0y61ffSuMeukxYwE/olWUM8SA
+ERHid2DYFvR9UI12PnQnyI8MbeWKdvpf2KB6WaIdRuXSICukLSg=
+=n93v
 -----END PGP SIGNATURE-----
