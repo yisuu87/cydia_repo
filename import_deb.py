@@ -245,14 +245,6 @@ def generate_packages():
 
     # Compress
     try:
-        import bz2
-        bz2_path = REPO_ROOT / "Packages.bz2"
-        bz2_path.write_bytes(bz2.compress(packages_text.encode("utf-8")))
-        print("  [+] Generated Packages.bz2")
-    except Exception as e:
-        print(f"  [!] bz2 compression failed: {e}")
-
-    try:
         import gzip
         gz_path = REPO_ROOT / "Packages.gz"
         gz_path.write_bytes(gzip.compress(packages_text.encode("utf-8")))
@@ -352,7 +344,7 @@ def update_release():
         lines.append(line)
 
     # Compute checksums for Packages files
-    packages_files = ["Packages", "Packages.bz2", "Packages.gz"]
+    packages_files = ["Packages", "Packages.gz"]
     md5_lines = []
     sha1_lines = []
     sha256_lines = []
